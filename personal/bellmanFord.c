@@ -69,14 +69,5 @@ void main()
             scanf("%d",&graph[i][j]);
         }
     }
-
-    // for(int i=0;i<edge;i++)
-    // {
-    //     for(int j=0;j<3;j++)
-    //     {
-    //         printf("%d\t",graph[i][j]);
-    //     }
-    //     printf("\n");
-    // }
     BellmanFord(graph,v,edge,s);
 }
