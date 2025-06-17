@@ -66,15 +66,5 @@ void main()
         graph[k][l]=1;
         graph[l][k]=1;
     }
-    printf("Adjacency matrix of the grapg is:\n");
-    for(int i=0;i<vertex;i++)
-    {
-        for(int j=0;j<vertex;j++)
-        {
-            printf("%d\t",graph[i][j]);
-        }
-        printf("\n");
-    }
-
     nextColor(0,vertex);
 }
