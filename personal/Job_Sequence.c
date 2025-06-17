@@ -25,14 +25,7 @@ void display_job_sequence(Job jobs[],int dmax,int timeslot[],int maxprofit)
 // return the min value between two
 int minValue(int a,int b)
 {
-    if(a<b)
-    {
-        return a;
-    }
-    else
-    {
-        return b;
-    }
+    return a<b?a:b;
 }
 
 // sort the jobs based on their profit

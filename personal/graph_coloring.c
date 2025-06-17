@@ -31,7 +31,8 @@ void next_color(int k,int n)
        // If there is an edge between vertex `i` and vertex `k` and they have the same color
        if (graph[i][k] != 0 && color[k] == color[i])
        {
-           color[k] = color[i] + 1; // Assign the next color to vertex `k`
+           color[k]++; // Increment the color and restart checking from the beginning
+            i=-1; // Reset i to restart the loop (will become 0 after increment)
        }
    }
 
